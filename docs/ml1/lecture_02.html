@@ -49,7 +49,7 @@
   
   </div>
   
-  <div> First of all, don't forget to confirm your attendence on <a href="https://jgl.github.io/DiplomaInAppleDevelopment-AutumnWinter2023/codingOne/lecture_01.html#6"> Seats App!  </a></div>
+  <div> First of all, don't forget to confirm your attendence on <a href="https://jgl.github.io/DiplomaInAppleDevelopment-2025-2026/coding1/lecture_01.html#18"> Seats App!  </a></div>
   
   <div> fun (vintage) AI for today: an image-to-image translation model <a href="https://affinelayer.com/pixsrv/">Pix2Pix</a> (with an interactive demo web page) </div>
   
@@ -58,7 +58,7 @@
   <div> 
    - Pattern recognition is everywhere and amazing. ⭐️
       <br />         
-   - It'd be cool to better understand intelligence by prototyping it using human-made machine (“AI”).⭐️
+   - We'd love to understand intelligence better by prototyping it using human-made machines (“AI” systems).⭐️
       <br /> 
    - One intermediate goal of prototyping intelligence is to make machines to do pattern recognition. ⭐️
       <br />       
@@ -66,15 +66,7 @@
 
   </div>
   
-  <div> 
-    from <a href="https://moodle.arts.ac.uk/mod/resource/view.php?id=1251944">"Introduction to AI" by Mick Grierson</a>: 
-    <br /> 
-    - We can also view AI as statistical, probabilistic, stochastic and other mathematical processes that can be used to learn procedures and perform tasks automatically.
-    <br />       
-    - Symbolic and Connectionist approaches to AI  
-    <br /> 
-    (We'll see more on this in later lectures)
-  </div>
+
     
   <div> Representation </div>
   
@@ -158,9 +150,11 @@
    (Shoutout to  <a href="https://jgl.github.io/DiplomaInAppleDevelopment-AutumnWinter2022/codingOne/lecture_01.html#42">Joel's slides</a> on "what is computational thinking?")
   </div>
  
-  <div> Speaking of representation... 
+  <div> Till now we have been using English words to describe representations. 
      <br /> 
-    A name can be a person's representation and we have not heard about your names yet 😜 
+    How about using Machine words (numbers) to represent objects, concepts, etc.? 
+     <br /> 
+    🕶️Question for curiosity: what are differences between using our natural language vs. using numbers for representation? 
   </div>
   
   
@@ -229,7 +223,7 @@
       <br />   
     - Audio (music, speech)
       <br />   
-    - Number (the weather in degree celsius, your birthday, etc.  )
+    - Tabular (the weather in degree celsius, your birthday, etc.  )
       <br />  
       Can you think of any information that is not from the four categories?
   </div>
@@ -269,7 +263,22 @@
   <img src='https://cdn.glitch.global/0e13d0b6-6ebc-4330-9873-db7826d23957/sound-in-numbers.png?v=1696434561964'/>
   <div>Here is one way to numberify digital audio:
    <br />  
-    - A series of numbers where each number denotes a displacement value from silence at that point of time </div>
+    Each number in a digital audio file represents the instantaneous amplitude (height) of the sound wave.
+     <br /> 
+    - that is, how far the air pressure at that moment is above or below the neutral “silence” level. 
+    <br /> 
+  Slightly more poeticL A series of numbers where each number denotes a displacement value from silence at that point in time.
+<br /> 
+    A little bit more details:
+    <br /> 
+     - The sound wave is sampled at regular time intervals — e.g. 44,100 times per second in CD-quality audio (that’s the sampling rate).
+    <br /> 
+   - Each sample corresponds to one number.
+<br /> 
+    - Together, these numbers trace out how the air pressure (or voltage, in an electrical signal) changes over time.
+    
+  </div>
+    
   </div>
   
   <div> Here is one way to numberify text:
@@ -284,7 +293,7 @@
   </div>
   
   
-  <div> A tricky question for you!
+  <div> 🤗A tricky question for you! - how to use numbers to represent information that are more abstract than images/audios?
    <br /> 
   How to numberify the label of an image being a dog🐶 image or a cat😼 image?
   <br /> 
