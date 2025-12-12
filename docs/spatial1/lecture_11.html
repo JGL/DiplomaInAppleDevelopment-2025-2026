@@ -2,100 +2,100 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>Diploma in Apple Development 🍎👩🏻‍💻: 2025/2026: Spatial 1: Lecture 11: Develop in Swift and Introductory visionOS samples.</title>
-  <!-- This whole presentation was made with Big: https://github.com/tmcw/big -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Diploma in Apple Development 🍎👩🏻‍💻: 2025/2026: Spatial 1: Lecture 11: Develop in Swift and Introductory visionOS samples.</title>
+	<!-- This whole presentation was made with Big: https://github.com/tmcw/big -->
 
-  <link href="../big/big.css" rel="stylesheet" type="text/css" />
-  <script>
-    BIG_ASPECT_RATIO = false;
-  </script>
+	<link href="../big/big.css" rel="stylesheet" type="text/css" />
+	<script>
+		BIG_ASPECT_RATIO = false;
+	</script>
 
-  <script src="../big/big.js"></script>
-  <link href="../big/themes/lightWhite.css" rel="stylesheet" type="text/css" />
+	<script src="../big/big.js"></script>
+	<link href="../big/themes/lightWhite.css" rel="stylesheet" type="text/css" />
 
-  <!-- Favicon link below, via https://emojitofavicon.com -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
+	<!-- Favicon link below, via https://emojitofavicon.com -->
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
 
-  <style>
-    body {
-      background-color: #EDD1B0;
-    }
-  </style>
+	<style>
+		body {
+			background-color: #EDD1B0;
+		}
+	</style>
 </head>
 
 <body>
-  <div>Diploma in Apple Development 🍎👩🏻‍💻: Spatial 1: Lecture 11: Develop in Swift and Introductory visionOS samples.
-    <br />
-    <a href="../index.html">Back to slide index</a>.
-  </div>
-  <div>Hi!</div>
-  <div>First, don't forget to confirm your attendance using the Seats Mobile app!</div>
-  <div>Second, I'm going to start every lecture with a meditation from the fantastic <a href="https://www.shambhala.com/sittingstilllikeafrog/">Sitting Still Like a Frog book</a>, all read by Myla Kabat-Zinn. If you don't want to participate that's completely fine.</div>
-  <div>Let's start with a video from WWDC 2024 about RealityKit for iOS, macOS and visionOS.</div>
-  <div>
-    <a href="https://developer.apple.com/videos/play/wwdc2024/10103/">"Discover RealityKit APIs for iOS, macOS and visionOS" (32 mins)</a>
-    <br />
-    "Learn how new cross-platform APIs in RealityKit can help you build immersive apps for iOS, macOS, and visionOS. Check out the new hover effects, lights and shadows, and portal crossing features, and view them in action through real examples."
-  </div>
-  <div>
-    Together, let's continue Apple's <a href="https://developer.apple.com/tutorials/develop-in-swift/welcome-to-develop-in-swift-tutorials">Develop in Swift Tutorials</a> from Coding 1 - moving onto: <a href="https://developer.apple.com/tutorials/develop-in-swift/welcome-to-spatial-computing">Welcome to spatial computing</a>, continuing to <a href="https://developer.apple.com/tutorials/develop-in-swift/add-depth-to-your-app">Add depth to your app</a>, before finishing with <a href="https://developer.apple.com/tutorials/develop-in-swift/windows-in-visionos-conclusion">Wrap-up: Windows in visionOS</a>.
-  </div>
-  <div>
-    Together, let's continue Apple's <a href="https://developer.apple.com/tutorials/develop-in-swift/welcome-to-develop-in-swift-tutorials">Develop in Swift Tutorials</a> - moving onto: <a href="https://developer.apple.com/tutorials/develop-in-swift/present-common-controls-in-an-ornament">Present common controls in an ornament</a> before finishing with <a href="https://developer.apple.com/tutorials/develop-in-swift/ornaments-and-multiple-windows-conclusion">Wrap-up: Ornaments and multiple windows</a>.
-  </div>
-  <div>
-    Together, let's continue Apple's <a href="https://developer.apple.com/tutorials/develop-in-swift/welcome-to-develop-in-swift-tutorials">Develop in Swift Tutorials</a> - moving onto: <a href="https://developer.apple.com/tutorials/develop-in-swift/create-3d-models-in-the-shared-space">Create 3D models in the Shared Space</a> before finishing with <a href="https://developer.apple.com/tutorials/develop-in-swift/volumes-in-visionos-conclusion">Wrap-up: Volumes in visionOS</a>.
-  </div>
-  <div>Next, let's explore this Sample Code from Apple: <a href="https://developer.apple.com/documentation/RealityKit/combining-2d-and-3d-views-in-an-immersive-app">Combining 2D and 3D views in an immersive app</div>
-  <div>Let's move on to working through some of Apple's <a href="https://developer.apple.com/documentation/visionos/introductory-visionos-samples">Introductory visionOS samples</a> - remixing existing code is a completely valid way of making new apps!
-    <ul>
-      <li><a href="https://developer.apple.com/documentation/visionos/creating-2d-shapes-in-visionos-with-swiftui">"Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes"</a></li>
-      <li><a href="https://developer.apple.com/documentation/visionos/creating-a-new-swiftui-window-in-visionos">"Creating SwiftUI windows in visionOS"</a></li>
-      <li><a href="hhttps://developer.apple.com/documentation/visionos/creating-a-volumetric-window-in-visionos">"Creating 3D models as movable windows"</a></li>
-      <li><a href="https://developer.apple.com/documentation/visionos/displaying-text-in-visionos">"Displaying text in visionOS"</a></li>
-      <li><a href="https://developer.apple.com/documentation/visionos/adding-a-depth-effect-to-text-in-visionos">"Adding a depth effect to text in visionOS"</a></li>
-      <li><a href="https://developer.apple.com/documentation/visionos/creating-an-interactable-3d-model-in-visionos">"Creating an interactive 3D model in visionOS"</a> - <a href="https://en.wikipedia.org/wiki/Nota_bene">N.B.</a> this is now much easier with the <a href="https://developer.apple.com/documentation/realitykit/manipulationcomponent">RealityKit ManipulationComponent</a>, but that's for Block 2 (second half of the year).</li>
-      <li><a href="https://developer.apple.com/documentation/visionos/creating-immersive-spaces-in-visionos-with-swiftui">"Creating an immersive space in visionOS"</a></li>
-    </ul>
-  </div>
-  <div>What questions do you have for me?</div>
-  <div>
-    See you next year! Please review all of the content from today's lecture before then, as well as completing the following pages from the <a href="https://education-static.apple.com/coding-club-kit/appworkbook.key">App Design Workbook</a>:
-    <ol>
-      <li>
-        Page 82 of the App Design Workbook: "Refine"
-      </li>
-      <li>
-        Page 92 of the App Design Workbook: "Define Personality"
-      </li>
-      <li>
-        Page 95 of the App Design Workbook: "Design Icon"
-      </li>
-      <li>
-        Page 99 of the App Design Workbook: "Define Tests"
-      </li>
-      <li>
-        Page 101 of the App Design Workbook: "Create User Journeys"
-      </li>
-      <li>
-        Page 102 of the App Design Workbook: "Define a Process"
-      </li>
-      <li>
-        Page 104 of the App Design Workbook: "Plan an Introduction"
-      </li>
-      <li>
-        Page 105 of the App Design Workbook: "Script" - this entire section, up to and including "Prepare"
-      </li>
-      <li>
-        Between now and next term, I expect you to run your tests with users, then complete the "Validate" section on page 114, and start iterating your designs!
-      </li>
-    </ol>
-  </div>
-  <div>
-    Thanks!<br /><a href="../index.html">Back to slide index</a>.
-  </div>
+	<div>Diploma in Apple Development 🍎👩🏻‍💻: Spatial 1: Lecture 11: Develop in Swift and Introductory visionOS samples.
+		<br />
+		<a href="../index.html">Back to slide index</a>.
+	</div>
+	<div>Hi!</div>
+	<div>First, don't forget to confirm your attendance using the Seats Mobile app!</div>
+	<div>Second, I'm going to start every lecture with a meditation from the fantastic <a href="https://www.shambhala.com/sittingstilllikeafrog/">Sitting Still Like a Frog book</a>, all read by Myla Kabat-Zinn. If you don't want to participate that's completely fine.</div>
+	<div>Let's start with a video from WWDC 2024 about RealityKit for iOS, macOS and visionOS.</div>
+	<div>
+		<a href="https://developer.apple.com/videos/play/wwdc2024/10103/">"Discover RealityKit APIs for iOS, macOS and visionOS" (32 mins)</a>
+		<br />
+		"Learn how new cross-platform APIs in RealityKit can help you build immersive apps for iOS, macOS, and visionOS. Check out the new hover effects, lights and shadows, and portal crossing features, and view them in action through real examples."
+	</div>
+	<div>
+		Together, let's continue Apple's <a href="https://developer.apple.com/tutorials/develop-in-swift/welcome-to-develop-in-swift-tutorials">Develop in Swift Tutorials</a> from Coding 1 - moving onto: <a href="https://developer.apple.com/tutorials/develop-in-swift/welcome-to-spatial-computing">Welcome to spatial computing</a>, continuing to <a href="https://developer.apple.com/tutorials/develop-in-swift/add-depth-to-your-app">Add depth to your app</a>, before finishing with <a href="https://developer.apple.com/tutorials/develop-in-swift/windows-in-visionos-conclusion">Wrap-up: Windows in visionOS</a>.
+	</div>
+	<div>
+		Together, let's continue Apple's <a href="https://developer.apple.com/tutorials/develop-in-swift/welcome-to-develop-in-swift-tutorials">Develop in Swift Tutorials</a> - moving onto: <a href="https://developer.apple.com/tutorials/develop-in-swift/present-common-controls-in-an-ornament">Present common controls in an ornament</a> before finishing with <a href="https://developer.apple.com/tutorials/develop-in-swift/ornaments-and-multiple-windows-conclusion">Wrap-up: Ornaments and multiple windows</a>.
+	</div>
+	<div>
+		Together, let's continue Apple's <a href="https://developer.apple.com/tutorials/develop-in-swift/welcome-to-develop-in-swift-tutorials">Develop in Swift Tutorials</a> - moving onto: <a href="https://developer.apple.com/tutorials/develop-in-swift/create-3d-models-in-the-shared-space">Create 3D models in the Shared Space</a> before finishing with <a href="https://developer.apple.com/tutorials/develop-in-swift/volumes-in-visionos-conclusion">Wrap-up: Volumes in visionOS</a>.
+	</div>
+	<div>Next, let's explore this Sample Code from Apple: <a href="https://developer.apple.com/documentation/RealityKit/combining-2d-and-3d-views-in-an-immersive-app">Combining 2D and 3D views in an immersive app</a></div>
+	<div>Let's move on to working through some of Apple's <a href="https://developer.apple.com/documentation/visionos/introductory-visionos-samples">Introductory visionOS samples</a> - remixing existing code is a completely valid way of making new apps!
+		<ul>
+			<li><a href="https://developer.apple.com/documentation/visionos/creating-2d-shapes-in-visionos-with-swiftui">"Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes"</a></li>
+			<li><a href="https://developer.apple.com/documentation/visionos/creating-a-new-swiftui-window-in-visionos">"Creating SwiftUI windows in visionOS"</a></li>
+			<li><a href="hhttps://developer.apple.com/documentation/visionos/creating-a-volumetric-window-in-visionos">"Creating 3D models as movable windows"</a></li>
+			<li><a href="https://developer.apple.com/documentation/visionos/displaying-text-in-visionos">"Displaying text in visionOS"</a></li>
+			<li><a href="https://developer.apple.com/documentation/visionos/adding-a-depth-effect-to-text-in-visionos">"Adding a depth effect to text in visionOS"</a></li>
+			<li><a href="https://developer.apple.com/documentation/visionos/creating-an-interactable-3d-model-in-visionos">"Creating an interactive 3D model in visionOS"</a> - <a href="https://en.wikipedia.org/wiki/Nota_bene">N.B.</a> this is now much easier with the <a href="https://developer.apple.com/documentation/realitykit/manipulationcomponent">RealityKit ManipulationComponent</a>, but that's for Block 2 (second half of the year).</li>
+			<li><a href="https://developer.apple.com/documentation/visionos/creating-immersive-spaces-in-visionos-with-swiftui">"Creating an immersive space in visionOS"</a></li>
+		</ul>
+	</div>
+	<div>What questions do you have for me?</div>
+	<div>
+		See you next year! Please review all of the content from today's lecture before then, as well as completing the following pages from the <a href="https://education-static.apple.com/coding-club-kit/appworkbook.key">App Design Workbook</a>:
+		<ol>
+			<li>
+				Page 82 of the App Design Workbook: "Refine"
+			</li>
+			<li>
+				Page 92 of the App Design Workbook: "Define Personality"
+			</li>
+			<li>
+				Page 95 of the App Design Workbook: "Design Icon"
+			</li>
+			<li>
+				Page 99 of the App Design Workbook: "Define Tests"
+			</li>
+			<li>
+				Page 101 of the App Design Workbook: "Create User Journeys"
+			</li>
+			<li>
+				Page 102 of the App Design Workbook: "Define a Process"
+			</li>
+			<li>
+				Page 104 of the App Design Workbook: "Plan an Introduction"
+			</li>
+			<li>
+				Page 105 of the App Design Workbook: "Script" - this entire section, up to and including "Prepare"
+			</li>
+			<li>
+				Between now and next term, I expect you to run your tests with users, then complete the "Validate" section on page 114, and start iterating your designs!
+			</li>
+		</ol>
+	</div>
+	<div>
+		Thanks!<br /><a href="../index.html">Back to slide index</a>.
+	</div>
 </body>
 
 </html>
