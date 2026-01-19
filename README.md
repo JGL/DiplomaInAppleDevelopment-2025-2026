@@ -144,7 +144,7 @@ Please read [UAL's guidance for students on how they will be assessed](https://w
 - **Coding 2: Further Apple Frameworks**:
 
   1. Multiple Choice test: students will be presented with a series of questions relating explicitly to course content. They must choose between up to 4 potential correct answers per question. This test will be sat on Tuesday 2nd June 2026, duration two hours, 1000-1200. This test will be worth 50% of your overall unit mark.
-  2. Practical Exam: students will be individually asked to write a basic program to demonstrate the application of creative coding to a set problem. This exam will be sat on Tuesady 9th June 2026, duration two hours, 1000-1200. This exam will be worth 50% of your overall unit mark.
+  2. Practical Exam: students will be individually asked to write a basic program to demonstrate the application of creative coding to a set problem. This exam will be sat on Tuesday 9th June 2026, duration two hours, 1000-1200. This exam will be worth 50% of your overall unit mark.
 
 - **ML 2: Making Models with CreateML**:
 
