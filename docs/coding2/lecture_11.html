@@ -2,76 +2,51 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>Diploma in Apple Development 🍎👩🏻‍💻: 2025/2026: Coding 2: Lecture 11: What is going on with SwiftUI under the hood.</title>
-  <!-- This whole presentation was made with Big: https://github.com/tmcw/big -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Diploma in Apple Development 🍎👩🏻‍💻: 2025/2026: Coding 2: Lecture 11: Happy Beam.</title>
+	<!-- This whole presentation was made with Big: https://github.com/tmcw/big -->
 
-  <link href="../big/big.css" rel="stylesheet" type="text/css" />
-  <script>
-    BIG_ASPECT_RATIO = false;
-  </script>
+	<link href="../big/big.css" rel="stylesheet" type="text/css" />
+	<script>
+		BIG_ASPECT_RATIO = false;
+	</script>
 
-  <script src="../big/big.js"></script>
-  <link href="../big/themes/lightWhite.css" rel="stylesheet" type="text/css" />
+	<script src="../big/big.js"></script>
+	<link href="../big/themes/lightWhite.css" rel="stylesheet" type="text/css" />
 
-  <!-- Favicon link below, via https://emojitofavicon.com -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
+	<!-- Favicon link below, via https://emojitofavicon.com -->
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
 
-  <style>
-    body {
-      background-color: #EDD1B0;
-    }
-  </style>
+	<style>
+		body {
+			background-color: #EDD1B0;
+		}
+	</style>
 </head>
 
 <body>
-  <div>Diploma in Apple Development 🍎👩🏻‍💻: Coding 2: Lecture Lecture 11: What is going on with SwiftUI under the hood.<br /><a href="../index.html">Back to slide index</a>.</div>
-  <div>
-    👋🏻 Hi!
-  </div>
-  <div>First, don't forget to confirm your attendance using the Seats Mobile app!</div>
-  <div>Second, I'm going to start every lecture with a meditation from the fantastic <a href="https://www.shambhala.com/sittingstilllikeafrog/">Sitting Still Like a Frog book</a>, all read by Myla Kabat-Zinn. If you don't want to participate that's completely fine.</div>
-  <div>
-    This is the final Coding lecture for the whole year. We are going to go into how SwiftUI works under the hood. Apple hasn't officially told us what is going on, so we are going to have to be detectives and piece it all together. We are going to go in this order:
-    <ul>
-      <li>What a Tuple is in Swift</li>
-      <li>What a Key Path expression is in Swift and how it used in a For Each statement</li>
-      <li>What the some, any and Any keywords mean</li>
-      <li>What property wrappers are and how you can use them for data management in SwiftUI</li>
-      <li>What a ViewBuilder is in SwiftUI</li>
-      <li>What a Result Builder is in Swift</li>
-      <li>Take a deep dive into SwiftUI</li>
-      <li>Spend a day in the life of a SwiftUI view</li>
-    </ul>
-  </div>
-  <div>
-    What a Tuple is in Swift. <a href="">What does Wikipedia say a Tuple is?</a>. <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Tuples">What does a Tuple mean in Swift?</a>. <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions/#Tuple-Expression">How does a Tuple Expression work compared to all other valid Expressions in Swift?</a>. We are going deep into how Swift itself works.
-  </div>
-  <div>
-    What a Key Path expression is in Swift and how it used in a For Each statement. <a href="https://developer.apple.com/documentation/swift/keypath">What does the Swift Book say about Key Path Expressions</a>? Now for a pair of articles that helped me understand them: <a href="https://www.andyibanez.com/posts/understanding-keypaths-swift/">"Understanding KeyPaths in Swift" by Andy Ibanez</a> and <a href="https://www.hackingwithswift.com/books/ios-swiftui/why-does-self-work-for-foreach">"Why does \.self work for ForEach?" by Paul Hudson</a>.
-  </div>
-  <div>
-    What the some, any and Any keywords mean (remember Uppercase and lowercase can be important in programming languages!). <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/">Apple article on Opaque and Boxed Protocol Types - aka some and any</a>. More detail on <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/#Opaque-Type">some aka Opaque Type</a>, <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/#Boxed-Protocol-Type">any aka Boxed Protocol Types</a> and finally <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/#Any-Type">more information about the Any Type</a>.
-  </div>
-  <div>
-    What property wrappers are and how you can use them for data management in SwiftUI. <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/#Property-Wrappers">Let's see what the Swift book says about property wrappers</a>. <a href="https://developer.apple.com/documentation/swiftui/model-data">Let's continue with this introductory article on Model Data from Apple</a>. Note that @State, @Binding and @Environment are all property wrappers! <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/macros/">N.B. @Observable is a macro, find out more here</a>.
-  </div>
-  <div>
-    What a <a href="https://developer.apple.com/documentation/swiftui/viewbuilder">ViewBuilder is in SwiftUI</a>.
-  </div>
-  <div>
-    What a <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/#Result-Builders">Result Builder</a> is in Swift. For more information on Result Builders and how SwiftUI another Apple API's are designed and implemented, see the following WWDC sessions: <a href="https://developer.apple.com/wwdc21/10253">"Write a DSL in Swift using result builders"</a> and <a href="https://developer.apple.com/videos/play/wwdc2019/415">"Modern Swift API Design"</a>.
-  </div>
-  <div>
-    Let's watch this talk from <a href="http://www.eidhof.nl">Chris Eidhof</a>: <a href="https://www.youtube.com/watch?v=lm2Q3BU9dsg">"Take a deep dive into SwiftUI"</a>, then take a look at <a href="https://www.swiftuifieldguide.com/layout/introduction/">The SwiftUI Field Guide introduction</a>.
-  </div>
-  <div>
-    Let's watch another talk from <a href="http://www.eidhof.nl">Chris Eidhof</a>: <a href="https://www.youtube.com/watch?v=MRY3UCUVv98">"A day in the life of a SwiftUI view"</a>. BTW, <a href="https://rensbr.eu/blog/swiftui-attribute-graph/">this article shows what the actual SwiftUI attribute graph looks like</a>!
-  </div>
-  <div>
-    Thanks! As always, please review all today's content as homework. Next week will be mock Practical Exam and Multiple Choice Tests.<br /><a href="../index.html">Back to slide index</a>.
-  </div>
+	<div>Diploma in Apple Development 🍎👩🏻‍💻: Coding 2: Lecture 11: Happy Beam.<br /><a href="../index.html">Back to slide index</a>.</div>
+	<div>
+		👋🏻 Hi!
+	</div>
+	<div>First, don't forget to confirm your attendance using the Seats Mobile app!</div>
+	<div>Second, I'm going to start every lecture with a meditation from the fantastic <a href="https://www.shambhala.com/sittingstilllikeafrog/">Sitting Still Like a Frog book</a>, all read by Myla Kabat-Zinn. If you don't want to participate that's completely fine.</div>
+	<div>Today's lecture is going to be a deep dive into the visionOS sample code from Apple: <a href="https://developer.apple.com/documentation/visionos/happybeam">Happy Beam</a>. Let's start by trying the app out amongst ourselves on one of our three Vision Pro headsets.</div>
+	<div>Great, now that we've all experienced the app, let's take a look at <a href="https://developer.apple.com/documentation/visionos/setting-up-access-to-arkit-data">this article which details how to set up access to ARKit data on device</a>. TLDR: you can add it to your project's app’s information property list or in code directly.</div>
+	<div>Now that we've understood how to enable access, lets go through the <a href="https://developer.apple.com/documentation/visionos/happybeam">Happy Beam</a> article and source code in detail. The way this app deals with the state of the game would be a great thing to duplicate in your Spatial 2 solo app - as well as its fantastic accessibility features - how many different ways does it allow you to play the game?</div>
+	<div>Stop press! Lots of hand tracking demos from GitHub, shall we give them a try?
+		<ul>
+			<li><a href="https://gist.github.com/Matt54/7581778f0a3f4f0da5bdcdf85db074f2">RealityView where users practice target shooting by detecting finger gun gestures and using ray casting to hit virtual targets</a>. Stop stop press! This code relies on the very useful <a href="https://github.com/XanderXu/HandVector">HandVector project</a> from <a href="https://github.com/XanderXu">Xander Xu</a>.</li>
+			<li><a href="https://gist.github.com/Matt54/419aec30af60291b6e719e76f3d15e50">RealityView that detects finger gun gestures and uses ray casting to interact with virtual objects</a>.</li>
+			<li><a href="https://gist.github.com/Matt54/5faee4bbbb935c334ebf8df7b44db28d">RealityView with raycasting from the index finger to a sphere, showing a color change on hit</a>.</li>
+			<li><a href="https://gist.github.com/Matt54/ac4a9474fbfc6d266daffaab7f0fa677">RealityView of light beam synth with touch gesture interactions</a>.</li>
+			<li><a href="https://gist.github.com/Matt54/921cc3fb9ea2e8fae3681f9ff05e267a">RealityView where a cylinder's detected SpatialEventGesture modulates a signal generator's output</a>.</li>
+		</ul>
+	</div>
+	<div>
+		Thanks! As always, please review all today's content as homework. Next week will be mock Practical Exam and Multiple Choice Tests.<br /><a href="../index.html">Back to slide index</a>.
+	</div>
 </body>
 
 </html>

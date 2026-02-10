@@ -2,51 +2,50 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>Diploma in Apple Development 🍎👩🏻‍💻: 2025/2026: Coding 2: Lecture 4: Happy Beam and recognising hand shapes.</title>
-  <!-- This whole presentation was made with Big: https://github.com/tmcw/big -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Diploma in Apple Development 🍎👩🏻‍💻: 2025/2026: Coding 2: Lecture 4: The Observable macro and SwiftData.</title>
+	<!-- This whole presentation was made with Big: https://github.com/tmcw/big -->
 
-  <link href="../big/big.css" rel="stylesheet" type="text/css" />
-  <script>
-    BIG_ASPECT_RATIO = false;
-  </script>
+	<link href="../big/big.css" rel="stylesheet" type="text/css" />
+	<script>
+		BIG_ASPECT_RATIO = false;
+	</script>
 
-  <script src="../big/big.js"></script>
-  <link href="../big/themes/lightWhite.css" rel="stylesheet" type="text/css" />
+	<script src="../big/big.js"></script>
+	<link href="../big/themes/lightWhite.css" rel="stylesheet" type="text/css" />
 
-  <!-- Favicon link below, via https://emojitofavicon.com -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
+	<!-- Favicon link below, via https://emojitofavicon.com -->
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
 
-  <style>
-    body {
-      background-color: #EDD1B0;
-    }
-  </style>
+	<style>
+		body {
+			background-color: #EDD1B0;
+		}
+	</style>
 </head>
 
 <body>
-  <div>Diploma in Apple Development 🍎👩🏻‍💻: Coding 2: Lecture 4: Happy Beam and recognising hand shapes.<br /><a href="../index.html">Back to slide index</a>.</div>
-  <div>
-    👋🏻 Hi!
-  </div>
-  <div>First, don't forget to confirm your attendance using the Seats Mobile app!</div>
-  <div>Second, I'm going to start every lecture with a meditation from the fantastic <a href="https://www.shambhala.com/sittingstilllikeafrog/">Sitting Still Like a Frog book</a>, all read by Myla Kabat-Zinn. If you don't want to participate that's completely fine.</div>
-  <div>Today's lecture is going to be a deep dive into the visionOS sample code from Apple: <a href="https://developer.apple.com/documentation/visionos/happybeam">Happy Beam</a>. Let's start by trying the app out amongst ourselves on one of our three Vision Pro headsets.</div>
-  <div>Great, now that we've all experienced the app, let's take a look at <a href="https://developer.apple.com/documentation/visionos/setting-up-access-to-arkit-data">this article which details how to set up access to ARKit data on device</a>. TLDR: you can add it to your project's app’s information property list or in code directly.</div>
-  <div>Now that we've understood how to enable access, lets go through the <a href="https://developer.apple.com/documentation/visionos/happybeam">Happy Beam</a> article and source code in detail. The way this app deals with the state of the game would be a great thing to duplicate in your Spatial 2 solo app - as well as its fantastic accessibility features - how many different ways does it allow you to play the game?</div>
-  <div>Stop press! Lots of hand tracking demos from GitHub, shall we give them a try?
-    <ul>
-      <li><a href="https://gist.github.com/Matt54/7581778f0a3f4f0da5bdcdf85db074f2">RealityView where users practice target shooting by detecting finger gun gestures and using ray casting to hit virtual targets</a>. Stop stop press! This code relies on the very useful <a href="https://github.com/XanderXu/HandVector">HandVector project</a> from <a href="https://github.com/XanderXu">Xander Xu</a>.</li>
-      <li><a href="https://gist.github.com/Matt54/419aec30af60291b6e719e76f3d15e50">RealityView that detects finger gun gestures and uses ray casting to interact with virtual objects</a>.</li>
-      <li><a href="https://gist.github.com/Matt54/5faee4bbbb935c334ebf8df7b44db28d">RealityView with raycasting from the index finger to a sphere, showing a color change on hit</a>.</li>
-      <li><a href="https://gist.github.com/Matt54/ac4a9474fbfc6d266daffaab7f0fa677">RealityView of light beam synth with touch gesture interactions</a>.</li>
-      <li><a href="https://gist.github.com/Matt54/921cc3fb9ea2e8fae3681f9ff05e267a">RealityView where a cylinder's detected SpatialEventGesture modulates a signal generator's output</a>.</li>
-    </ul>
-  </div>
-  <div>
-    Thanks! As always, please review all today's content as homework.<br /><a href="../index.html">Back to slide index</a>.
-  </div>
+	<div>Diploma in Apple Development 🍎👩🏻‍💻: Coding 2: Lecture 4: The Observable macro and SwiftData.<br /><a href="../index.html">Back to slide index</a>.</div>
+	<div>
+		👋🏻 Hi!
+	</div>
+	<div>First, don't forget to confirm your attendance using the Seats Mobile app!</div>
+	<div>Second, I'm going to start every lecture with a meditation from the fantastic <a href="https://www.shambhala.com/sittingstilllikeafrog/">Sitting Still Like a Frog book</a>, all read by Myla Kabat-Zinn. If you don't want to participate that's completely fine.</div>
+	<div>Let's start by watching this video from WWDC23: <a href="https://developer.apple.com/videos/play/wwdc2023/10149/">Discover Observation in SwiftUI</a>.</div>
+	<div>Please open up Xcode as we are going to do a new activity, a "Code-along" from Apple: <a href="https://developer.apple.com/videos/play/meet-with-apple/237/">Start building with Swift and SwiftUI</a>.</div>
+	<div>Let's continue by watching this video from WWDC23: <a href="https://developer.apple.com/videos/play/wwdc2023/10187/">Meet SwiftData</a>.</div>
+	<div>Let's finish by reviewing the following articles from developer.apple.com:
+		<ul>
+			<li><a href="https://developer.apple.com/documentation/swiftui/model-data">The basic concepts of data within SwiftUI</a> - having a single source of truth in your app - aka a data Model. Why might it be important to have a single source of truth?</li>
+			<li><a href="https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro">Migrating from the Observable Object protocol to the Observable macro</a> - this is useful to read because you might find some old example code from Apple that uses the old way of doing things.</li>
+			<li><a href="https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app">Managing model data in your app</a> - create connections between your app’s data model and views, using the @Observable macro. Is everyone clear on what a macro is?</li>
+			<li><a href="https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches">Preserving your app’s model data across launches</a> - let's review your knowledge of SwiftData.</li>
+		</ul>
+	</div>
+	<div>
+		Thanks! As always, please review all today's content as homework.<br /><a href="../index.html">Back to slide index</a>.
+	</div>
 </body>
 
 </html>

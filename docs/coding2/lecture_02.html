@@ -2,139 +2,46 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>Diploma in Apple Development 🍎👩🏻‍💻: 2025/2026: Coding 2: Lecture 2: Build great apps for visionOS with RealityKit workshop</title>
-  <!-- This whole presentation was made with Big: https://github.com/tmcw/big -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Diploma in Apple Development 🍎👩🏻‍💻: 2025/2026: Coding 2: Lecture 2: Apple's "App Dev Tutorials"</title>
+	<!-- This whole presentation was made with Big: https://github.com/tmcw/big -->
 
-  <link href="../big/big.css" rel="stylesheet" type="text/css" />
-  <script>
-    BIG_ASPECT_RATIO = false;
-  </script>
+	<link href="../big/big.css" rel="stylesheet" type="text/css" />
+	<script>
+		BIG_ASPECT_RATIO = false;
+	</script>
 
-  <script src="../big/big.js"></script>
-  <link href="../big/themes/lightWhite.css" rel="stylesheet" type="text/css" />
+	<script src="../big/big.js"></script>
+	<link href="../big/themes/lightWhite.css" rel="stylesheet" type="text/css" />
 
-  <!-- Favicon link below, via https://emojitofavicon.com -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
+	<!-- Favicon link below, via https://emojitofavicon.com -->
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
 
-  <style>
-    body {
-      background-color: #EDD1B0;
-    }
-  </style>
+	<style>
+		body {
+			background-color: #EDD1B0;
+		}
+	</style>
 </head>
 
 <body>
-  <div>Diploma in Apple Development 🍎👩🏻‍💻: Coding 2: Lecture 2: Build great apps for visionOS with RealityKit workshop.<br /><a href="../index.html">Back to slide index</a>.</div>
-  <div>
-    👋🏻 Hi!
-  </div>
-  <div>First, don't forget to confirm your attendance using the Seats Mobile app!</div>
-  <div>Second, I'm going to start every lecture with a meditation from the fantastic <a href="https://www.shambhala.com/sittingstilllikeafrog/">Sitting Still Like a Frog book</a>, all read by Myla Kabat-Zinn. If you don't want to participate that's completely fine.</div>
-  <div>This session is going to be a duplication of the workshop that I attended at Apple Battersea in November 2024: "Build great apps for visionOS with RealityKit".</div>
-  <div>Before we go through that code, let's start with revising our understanding of RealityKit with the following three articles:
-    <ul>
-      <li><a href="https://developer.apple.com/documentation/visionos/understanding-the-realitykit-modular-architecture">"Understanding the modular architecture of RealityKit"</a></li>
-      <li><a href="https://developer.apple.com/documentation/visionos/understanding-transforms">"Using transforms to move, scale, and rotate entities"</a></li>
-      <li><a href="https://developer.apple.com/documentation/realitykit/transforming-entities-between-realitykit-coordinate-spaces">"Transforming entities between RealityKit coordinate spaces"</a></li>
-    </ul>
-  </div>
-  <div>Let's get on with the workshop! It's split between Xcode and Reality Composer Pro, so make sure you have got both installed. They should come together. While you are doing that, I'm going to AirDrop all the files to someone - please keep passing it around to others to make this process faster! Inside the zip file should contain 10 further zip files.</div>
-  <div>
-    Each of the zips correspond to a task, and each task is broken down further. The nine tasks are:
-    <ol>
-      <ul>Assembling the scene in Reality Composer Pro</ul>
-      <ul>Displaying your Scene in SwiftUI</ul>
-      <ul>Applying materials to the scene</ul>
-      <ul>Building the Settings UI</ul>
-      <ul>Controlling the train's speed</ul>
-      <ul>Adding steam to the train</ul>
-      <ul>Adding light to the train</ul>
-      <ul>Adding the whistle audio</ul>
-      <ul>Stopping at the station</ul>
-    </ol>
-    If we run out of time (likely), please complete as homework! Remember - you can always look at the zip file of the task ahead in order to work out to do if you get stuck!
-  </div>
-  <div>1. Assembling the scene in Reality Composer Pro:
-    <ol>
-      <ul>Start with realitykit-sampleapp-start.zip</ul>
-      <ul>Open and explore Reality Composer Pro</ul>
-      <ul>Delete the default scene</ul>
-      <ul>Create a new scene and import the model</ul>
-      <ul>Rotate asset</ul>
-      <ul>Import other assets</ul>
-    </ol>
-  </div>
-  <div>2. Displaying your Scene in SwiftUI:
-    <ol>
-      <ul>Add the TrainVolumeView SwiftUI View file</ul>
-      <ul>Instantiate a RealityView with a placeholder</ul>
-      <ul>Adjust the volumetric window size (1.5m cube)</ul>
-      <ul>Reposition the model on the surface of the window (y: -0.65m)</ul>
-      <ul>Clean up, build and run</ul>
-    </ol>
-  </div>
-  <div>3. Applying materials to the scene:
-    <ol>
-      <ul>Create a new ShaderGraphMaterial</ul>
-      <ul>Compose the Shader Graph</ul>
-      <ul>Promote the uniform nodes</ul>
-      <ul>Creates instances of your material</ul>
-      <ul>Assign to the Entities</ul>
-      <ul>Create your own water material</ul>
-    </ol>
-  </div>
-  <div>4. Building the Settings UI:
-    <ol>
-      <ul>Create the TrainSettingsView UI</ul>
-      <ul>Add a new WindowGroup</ul>
-      <ul>Add an ornament to the volume to open the view</ul>
-    </ol>
-  </div>
-  <div>5. Controlling the train's speed:
-    <ol>
-      <ul>Create a var to store the AnimationPlaybackController</ul>
-      <ul>Get and play the baked animation in the RealityView</ul>
-      <ul>Update animation speed slider</ul>
-    </ol>
-  </div>
-  <div>6. Adding steam to the train:
-    <ol>
-      <ul>Create a new Scene for the particle system</ul>
-      <ul>Edit the emitter and particles to your liking</ul>
-      <ul>Parent the particle to the Locomotive</ul>
-      <ul>Make any adjustments</ul>
-      <ul>Build and run</ul>
-    </ol>
-  </div>
-  <div>7. Adding light to the train:
-    <ol>
-      <ul>Adding a spotlight to a new Scene</ul>
-      <ul>Configure the spotlight with the correct intensity</ul>
-      <ul>Activate the shadow component</ul>
-      <ul>Parent the new scene to the Locomotive</ul>
-      <ul>Make the light toggle in App Model</ul>
-    </ol>
-  </div>
-  <div>8. Adding the whistle audio:
-    <ol>
-      <ul>Add a new Scene</ul>
-      <ul>Add an Audio Library component to the Root and add the SFX file</ul>
-      <ul>Add a Spatial audio component to the Root</ul>
-    </ol>
-  </div>
-  <div>9. Stopping at the station:
-    <ol>
-      <ul>Set up colliders</ul>
-      <ul>Subscribe to events</ul>
-      <ul>Add a trainAtStation boolean in the events</ul>
-      <ul>Update updateTrainSpeed</ul>
-    </ol>
-  </div>
-  <div>
-    Thanks! As always, please review all today's content as homework.<br /><a href="../index.html">Back to slide index</a>.
-  </div>
+	<div>Diploma in Apple Development 🍎👩🏻‍💻: Coding 2: Lecture 2: Apple's "App Dev Tutorials".<br /><a href="../index.html">Back to slide index</a>.</div>
+	<div>
+		👋🏻 Hi!
+	</div>
+	<div>First, don't forget to confirm your attendance using the Seats Mobile app!</div>
+	<div>Second, I'm going to start every lecture with a meditation from the fantastic <a href="https://www.shambhala.com/sittingstilllikeafrog/">Sitting Still Like a Frog book</a>, all read by Myla Kabat-Zinn. If you don't want to participate that's completely fine.</div>
+	<div>
+		For a bit of revision, with this video from WWDC24: <a href="https://developer.apple.com/videos/play/wwdc2024/10184/">"A Swift Tour: Explore Swift’s features and design"</a>.
+	</div>
+	<div>
+		Our second bit of revision will be around SwiftUI, with this video from WWDC24: <a href="https://developer.apple.com/videos/play/wwdc2024/10150/">"SwiftUI essentials"</a>.
+	</div>
+	<div>Now let's move onto the main part of the next two lectures: Apple's <a href="https://developer.apple.com/tutorials/app-dev-training">"App Dev Tutorials"</a> - we are going to split this tutorial over the next two lectures. Please get your laptops ready with Xcode!</div>
+	<div>
+		Thanks! As always, please review all today's content as homework.<br /><a href="../index.html">Back to slide index</a>.
+	</div>
 </body>
 
 </html>
