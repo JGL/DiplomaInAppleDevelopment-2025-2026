@@ -38,7 +38,7 @@
   
     <div>Welcome 👩‍🎤🧑‍🎤👨‍🎤</div>
 
-    <div> First of all, don't forget to confirm your attendence on <a href="https://jgl.github.io/DiplomaInAppleDevelopment-AutumnWinter2023/codingOne/lecture_01.html#6"> Seats App!  </a></div>
+    <div> First of all, don't forget to confirm your attendence on <a href="https://www.arts.ac.uk/study-at-ual/course-regulations/attendance-policy/attendance-monitoring"> Seats App!  </a></div>
   
    <div>as usual, an AI-related <a href="https://vimeo.com/467769464"> cool project </a> to wake us up</div>
   
@@ -47,7 +47,7 @@
      <div> our previous classification app: </div>
   
   <div class=layout style='grid-template-columns: 50% 50%;'>
-  <img src='https://cdn.glitch.global/ef6898a8-fa1c-4173-83f0-de38487dafc7/prev_app.png?v=1681314112337'/>
+  <img src='images/screenshot-fruit-app.png'/>
   <div> it works on a single static image</div>
 </div>
 
@@ -58,8 +58,8 @@
   
                 <div>     
 after today's lecture:
-       <br /> -- object detection: how to prepare dataset, how to train 🤖          
-       <br /> -- a live capture app that recognises sea creatures 🦈
+       <br /> -- object detection: how to prepare the dataset, how to train the ML model 🤖          
+       <br /> -- a live capture app on your phone that recognises sea creatures 🦈
 </div>
   
   
@@ -114,32 +114,25 @@ and we are counting on CoreML and optimised chips to have fast AI computation th
   
 
 <div> 
-next: train our own object detection model using CreateML (no python this time) and integrate it into the app
+next: download a dataset, train our own object detection model using CreateML (no python this time), and integrate it into the app
 </div>
   
   
-  
-  <div class='layout' style='grid-template-rows:75% 25%;'>
-  <img src='  https://cdn.glitch.global/ef6898a8-fa1c-4173-83f0-de38487dafc7/workflow.png?v=1681319377207
-'/>
-  <div> the re-occuring machine learning workflow throughout our unit</div>
-</div>
   
    <div> 
              
-a <a href="https://developer.apple.com/machine-learning/models/">gentle reminder</a> of object detection  
+a <a href="https://developer.apple.com/machine-learning/models/">gentle reminder</a> of "object detection" 
   </div>
 
      <div> 
 part 1: data collection
  <br />   
 CreateML has its own data format for training, check it out <a href="https://developer.apple.com/documentation/createml/building-an-object-detector-data-source">here</a>
-  <br /> 
-10 mins read, take a note of keywords and alien words!
+
   </div>
   
    <div> 
-to save us some headaches from finding data, annotating and formatting
+To save us some headaches from finding data, annotating and formatting
   <br /> 
 introduce... <a href="https://universe.roboflow.com/roboflow-100/">roboflow</a> 
   </div>
@@ -164,13 +157,16 @@ take a note of:
   </div>
 
     <div> 
-also ask chatgpt why dataset is split into training/validation/testing sets for training an AI?
+Why dataset is split into training/validation/testing sets for training a machine learning model?
   </div>
 
       <div> 
-validation, evaluation and testing are very similar notions
+Validation, evaluation and testing are similar notions.
 <br />  
-they all seek to answer this question "how does my model perform on *unseen* data?"
+- They all seek to answer this question "how does my model perform on *unseen* data?"
+<br />  
+- *unseen* = not part of training
+        
   </div>
   
     <div> 
@@ -186,11 +182,16 @@ The keyword to model performance is *generalizability* which can only be evaluat
   </div>
     
     <div> 
-let's try the aquarium dataset!
+let's try the aquarium dataset on Roboflow! (I'll demo)
 <br />  
-after clicking the "Download" button
+1. Go to the dataset home page
 <br />  
-don't forget to select the life-saving "CreateML" format
+2. Click on the "dataset" tab (NOT THE "images" tab) on the left side bar.
+<br />  
+3. Select "Create ML JSON" tag.
+   <br /> 
+4. Click the "Download Dataset".
+    
   </div>
   
  
@@ -203,7 +204,7 @@ your turn:
  <br /> 
 --1. add train/val/test data folder into the data sources
  <br /> 
---2. select transfer learning
+--2. select "transfer learning"
 <br /> 
 --3. enter a smaller number of iteration (e.g. 1k)
 <br />       
@@ -217,15 +218,10 @@ this is just for lecture demonstration purpose, in practice you can try a larger
 🎉 
 </div>
   
- 
-<div>
-👁️ Two art projects with object(Face) detection models in live capture:
-<br /> -  <a href="https://www.youtube.com/watch?v=XSFP6JHnn9c"> Female figure by Jordan Wolfson </a>
-<br />  - <a href="https://www.youtube.com/watch?v=N-3NwGkF8Pw"> Hello by XuZhen </a>  
- </div>
+    <div> 
+Next: In CreateML, preview the result and export the model
+  </div>
 
-  
-  
 <div> 
 what does I/U mean?
 <br />       
@@ -235,49 +231,40 @@ it is a metric for measuring the similarity of two bounding boxes (the groudtrut
 <br /> 
 -- what does I/U 50% mean?
 </div>
-  
-  
-  
-   <div> 
-preview the result and export the model
-  </div>
-  
 
-  
-  
     <div> 
-import the model to our live capture APP and change this line:
+Next: import the model to our live capture APP in Xcode and change this line:
+<br />
+- line 24 in the file "VisionObjectRecognitionViewController". 
+<br />
+- change the model url name "ObjectDetector" in line 24 to your model class name!
+   <br />
+- build the APP on your phone and play!
   </div>
-  
 
-<div class='layout' style='grid-template-rows:75% 25%;'>
-  <img src='  https://cdn.glitch.global/ef6898a8-fa1c-4173-83f0-de38487dafc7/swapmodel?v=1681322697984
-'/>
-  <div> change the model name in line 24 to your model class name </div>
-</div>
+
+<div>
+👁️ Two art projects with object(Face) detection models in live capture:
+<br /> -  <a href="https://www.youtube.com/watch?v=XSFP6JHnn9c"> Female figure by Jordan Wolfson </a>
+<br />  - <a href="https://www.youtube.com/watch?v=N-3NwGkF8Pw"> Hello by XuZhen </a>  
+ </div>
  
-<div> 
-play with the app!  
-</div>
   
 <div> 
-question 1: from the entire pipeline 
+final question 1: from the entire pipeline 
  
   <br />  
   -- data collection -- training -- integration 
   
   
  <br />   
-  where do we specify/input the target classes information?
-</div>
-
-<div> 
-this is equivalent to ask, if i don't want a sea creature live detector but a car model live detector insteads, what are the steps to go?
+  where do we specify the target classes information?
+<br /> 
+  -- They are prepared and specified in the "data collection" part!
 </div>
   
-  
 <div> 
-question 2: can you think of possible extension/modification of this app to do some cool AR stuff?
+final question 1: can you think of possible extension/modification of this app to do some cool AR stuff?
 </div>
   
 <div> 
@@ -325,12 +312,11 @@ today we talked about:
 
 <div> 
 a recent AI <a href="https://reverie.herokuapp.com/arXiv_Demo/"> paper&project</a>, SimCity of AIs!
-
 </div>
 
 
   <div>     
-  We'll see you next week same time same place! 🫡
+  We'll see you after the Easter Break, same time same place! 🫡 Have a good one x
 </div>
   
  
