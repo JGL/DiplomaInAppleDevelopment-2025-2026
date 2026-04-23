@@ -167,6 +167,14 @@ Support is available! Complete the team's online form to request support for you
 
 See: <https://www.arts.ac.uk/students/student-services/counselling-health-advice-and-chaplaincy> for more information.
 
+Mental health first aiders: <https://canvas.arts.ac.uk/sites/explore/SitePage/255620/mental-health-first-aiders>
+
+Urgent mental health support - Monday - Saturday 9.30-5pm. Call 020 7514 6251 and ask to speak the Duty Worker.
+
+Email <studenthealth@arts.ac.uk> if you need urgent support from the Counselling and Health Advice Service. Available Monday to Saturday (term time), 9.30am to 5pm.
+
+Urgent support - out of hours: <https://www.arts.ac.uk/students/student-services/out-of-hours-support>
+
 ## Student parent and carer support
 
 Support is available! UAL seeks to create an inclusive environment that is welcoming to parents, carers and their children. UAL’s definition of parenthood includes:
